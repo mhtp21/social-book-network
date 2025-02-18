@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      max-file-size: 100MB
+springdoc:
+  default-produces-media-type: application/json
+server:
+  servlet:
+    context-path: /api/v1/
+
+keycloak:
+  realm: social-book-network
+  auth-server-url: http://keycloak:8080
+  client-id: social-book-network-api
+  admin-client-id: admin-cli
+  admin-username: admin
+  admin-password: admin
